@@ -5,7 +5,7 @@
 }
 
 .adress-icon {
-  fill: var(--caption-text-color);
+  fill: $caption-text-color;
 }
 
 .team-link {
@@ -26,12 +26,12 @@
 
 .foot .item:hover,
 .foot .item:focus {
-  color: var(--logo-text-color);
+  color: $logo-text-color;
 }
 
 .foot .page:hover,
 .foot .page:focus {
-  color: var(--logo-text-color);
+  color: $logo-text-color;
 }
 
 .foot .page {
@@ -48,12 +48,12 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   margin-bottom: 20px;
 }
 
 .adress .item {
-  color: var(--item-text-color);
+  color: $item-text-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -66,7 +66,7 @@
 }
 
 .adress .page {
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -78,7 +78,7 @@
 }
 
 .foot .title {
-  color: var(--logo-text-color);
+  color: $logo-text-color;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -89,7 +89,7 @@
 }
 
 .foot .caption {
-  color: var(--caption-text-color);
+  color: $caption-text-color;
 }
 
 .foot {
@@ -97,7 +97,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--subject-text-color);
+  background-color: $subject-text-color;
 }
 
 .basement {
@@ -130,7 +130,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   margin-bottom: 20px;
 }
 
@@ -148,7 +148,7 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: var(--caption-text-color);
+  color: $caption-text-color;
 }
 
 .foot-email:focus,
@@ -177,8 +177,8 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--caption-text-color);
-  background: var(--logo-text-color);
+  color: $caption-text-color;
+  background: $logo-text-color;
 }
 
 .form-bth:focus,
@@ -187,6 +187,6 @@
 }
 
 .form-icon {
-  fill: var(--caption-text-color);
+  fill: $caption-text-color;
   align-items: center;
 }

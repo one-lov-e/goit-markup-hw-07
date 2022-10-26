@@ -2,16 +2,23 @@
 
 @import "./base/reset";
 @import "./base/comon";
-@import "./utils/ordinary";
+@import "./base/container";
 
-@import "./header/header";
-@import "./header/auth-nav";
-@import "./header/logo";
-@import "./header/site-nav";
+@import "./components/header/auth-nav";
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/site-nav";
 
 @import "./components/main-section-headline/section-headline";
 @import "./components/main-section-subject/section-subject";
 @import "./components/main-section-title/section-title";
 @import "./components/main-section-work/section-work";
+@import "./components/main-cust/customers";
 
-@import "./layout/section-text";
+@import "./components/footer/foot";
+
+@import "./portfolio-filter/text-list";
+
+@import "./components/modal-window/backdrop";
+@import "./button/bth";
+@import "./portfolio/portfolio-bth";

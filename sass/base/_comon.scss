@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  color: var(--link-tex-color);
-  background-color: var(--caption-text-color);
+  color: $link-tex-color;
+  background-color: $caption-text-color;
   font-family: "Raleway", sans-serif;
 }
