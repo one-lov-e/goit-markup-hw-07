@@ -1,0 +1,30 @@
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-mail {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $auth-nav-text-color;
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $logo-text-color;
+  }
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
