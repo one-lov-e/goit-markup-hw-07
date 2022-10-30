@@ -1,0 +1,52 @@
+.customers {
+  padding: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--link-tex-color);
+  margin-bottom: 50px;
+}
+
+.customers__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.customers__logo {
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: fill var(--ms-transition);
+  transition-timing-function: var(--transition-effect);
+}
+
+.customers__icon {
+  fill: #afb1b8;
+}
+
+.customers__logo:hover,
+.customers__logo:focus {
+  border-color: var(--logo-text-color);
+}
+
+.customers__logo:hover .customers__icon,
+.customers__logo:focus .customers__icon {
+  fill: var(--logo-text-color);
+}

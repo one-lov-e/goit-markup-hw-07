@@ -1,0 +1,55 @@
+.thumb {
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
+
+.thumb__list {
+  display: flex;
+  width: 1170px;
+  height: 98px;
+}
+
+.thumb__item {
+  margin-right: 30px;
+  width: 270px;
+  height: 98px;
+}
+
+.thumb__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background: var(--ordinary-color);
+  border-radius: 4px;
+  height: 120px;
+}
+
+.thumb__text {
+  max-width: 270px;
+  height: 16px;
+  margin-bottom: 10px;
+
+  color: var(--link-tex-color);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.thumb__lead {
+  max-width: 270px;
+
+  color: var(--lead-text-color);
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.thumb__list li:last-child {
+  margin: 0;
+}

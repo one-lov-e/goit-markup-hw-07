@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header__contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__mail {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--auth-nav-text-color);
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__mail:hover,
+.header__mail:focus {
+  color: var(--logo-text-color);
+}
