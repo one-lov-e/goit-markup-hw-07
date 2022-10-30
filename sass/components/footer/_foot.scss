@@ -3,7 +3,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--subject-text-color);
+  background-color: $subject-text-color;
 }
 
 .foot__container {
@@ -25,20 +25,25 @@
 }
 
 .foot__page {
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  transition: color var(--ms-transition);
-  transition-timing-function: var(--transition-effect);
+  transition: color $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $logo-text-color;
+  }
 }
 
 .foot__item {
-  color: var(--item-text-color);
+  color: $item-text-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -46,8 +51,13 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
-  transition: color var(--ms-transition);
-  transition-timing-function: var(--transition-effect);
+  transition: color $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
+
+  &:hover,
+  &:focus {
+    color: $logo-text-color;
+  }
 }
 
 .foot__title {
@@ -60,7 +70,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   margin-bottom: 20px;
 }
 
@@ -83,35 +93,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: $logo-text-color;
+    color: $caption-text-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .foot__icon {
-  fill: var(--caption-text-color);
+  fill: $caption-text-color;
 }
 
 .logo__foot {
-  color: var(--caption-text-color);
-}
-
-.foot__link:hover,
-.foot__link:focus {
-  background-color: var(--logo-text-color);
-  color: var(--caption-text-color);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: $caption-text-color;
 }
 
 .foot__caption {
-  color: var(--caption-text-color);
-}
-
-.page:hover,
-.page:focus {
-  color: var(--logo-text-color);
-}
-
-.item:hover,
-.item:focus {
-  color: var(--logo-text-color);
+  color: $caption-text-color;
 }
 
 /*----------------------------------FOOTER FORM---------------------------------------*/
@@ -123,7 +123,7 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   margin-bottom: 20px;
 }
 
@@ -141,12 +141,12 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 15px;
-  color: var(--caption-text-color);
-}
+  color: $caption-text-color;
 
-.footer__email:focus,
-.footer__email:focus {
-  outline: #2196f3 solid 1px;
+  &:focus,
+  &:focus {
+    outline: #2196f3 solid 1px;
+  }
 }
 
 .footer__submit {
@@ -175,16 +175,16 @@
   text-align: center;
   letter-spacing: 0.06em;
 
-  color: var(--caption-text-color);
-  background: var(--logo-text-color);
-}
+  color: $caption-text-color;
+  background: $logo-text-color;
 
-.footer__bth:focus,
-.footer__bth:hover {
-  background-color: #188ce8;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }
 
 .footer__icon {
-  fill: var(--caption-text-color);
+  fill: $caption-text-color;
   align-items: center;
 }

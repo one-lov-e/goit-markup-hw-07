@@ -2,7 +2,7 @@
   position: absolute;
   width: 528px;
   min-height: 581px;
-  background: var(--caption-text-color);
+  background: $caption-text-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
@@ -17,7 +17,6 @@
   top: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--normal-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: flex;
@@ -35,7 +34,7 @@
   top: 8px;
   width: 30px;
   height: 30px;
-  background-color: var(--caption-text-color);
+  background-color: $caption-text-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   display: flex;
@@ -58,7 +57,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 
-  color: #212121;
+  color: $link-tex-color;
 }
 
 /*----------------MODAL FORM---------------------*/
@@ -73,7 +72,7 @@
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: $auth-nav-text-color;
   display: block;
   flex-direction: column;
   margin-bottom: 4px;
@@ -126,7 +125,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: $auth-nav-text-color;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -172,7 +171,7 @@
 }
 
 .modal__name a {
-  color: var(--logo-text-color);
+  color: $logo-text-color;
 }
 
 .modal__icon {
@@ -184,12 +183,12 @@
 }
 
 .input-check:checked + .modal__name span {
-  background-color: var(--logo-text-color);
+  background-color: $logo-text-color;
   border-radius: 2px;
 }
 
 .input-check:checked + .modal__name .check__icon {
-  fill: var(--caption-text-color);
+  fill: $caption-text-color;
   border: none;
 }
 /*-----------------MODAL-CHECKBOX  AND-------------------*/
@@ -201,7 +200,7 @@
   left: 700px;
   top: 712px;
 
-  background: var(--logo-text-color);
+  background: $logo-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin: auto;
@@ -220,9 +219,9 @@
   letter-spacing: 0.06em;
   margin: auto;
 
-  color: var(--caption-text-color);
-  background-color: var(--logo-text-color);
-  border: var(--logo-text-color);
+  color: $caption-text-color;
+  background-color: $logo-text-color;
+  border: $logo-text-color;
   cursor: pointer;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -236,7 +235,7 @@
   position: absolute;
   width: 528px;
   min-height: 581px;
-  background: var(--caption-text-color);
+  background: $caption-text-color;
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 4px;
@@ -257,7 +256,7 @@
 
 .data-modal-close:hover .icon-close,
 .data-modal-close:focus .icon-close {
-  fill: var(--logo-text-color);
+  fill: $logo-text-color;
 }
 
 .no-scroll {
@@ -265,21 +264,21 @@
 }
 
 .modal-modal:focus {
-  border-color: var(--logo-text-color);
+  border-color: $logo-text-color;
 }
 
 .modal__input:focus + .modal__icon {
-  fill: var(--logo-text-color);
+  fill: $logo-text-color;
 }
 
 .modal__input:focus,
 .modal__input:focus {
-  outline: var(--logo-text-color) solid 1px;
+  outline: $logo-text-color solid 1px;
 }
 
 .modal__gabarit:focus,
 .modal__gabarit:focus {
-  outline: var(--logo-text-color) solid 1px;
+  outline: $logo-text-color solid 1px;
 }
 /*-----------------MONDAL-CLOSE AND---------------------------*/
 

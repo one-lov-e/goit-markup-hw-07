@@ -12,7 +12,7 @@
   line-height: 42px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--link-tex-color);
+  color: $link-tex-color;
   margin-bottom: 50px;
 }
 
@@ -33,20 +33,20 @@
   align-items: center;
   justify-content: center;
   outline: none;
-  transition: fill var(--ms-transition);
-  transition-timing-function: var(--transition-effect);
+  transition: fill $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
+
+  &:hover,
+  &:focus {
+    border-color: $logo-text-color;
+  }
 }
 
 .customers__icon {
   fill: #afb1b8;
 }
 
-.customers__logo:hover,
-.customers__logo:focus {
-  border-color: var(--logo-text-color);
-}
-
 .customers__logo:hover .customers__icon,
 .customers__logo:focus .customers__icon {
-  fill: var(--logo-text-color);
+  fill: $logo-text-color;
 }

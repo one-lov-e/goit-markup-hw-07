@@ -20,7 +20,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  background: var(--ordinary-color);
+  background: $ordinary-text-color;
   border-radius: 4px;
   height: 120px;
 }
@@ -30,7 +30,7 @@
   height: 16px;
   margin-bottom: 10px;
 
-  color: var(--link-tex-color);
+  color: $link-tex-color;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
@@ -42,7 +42,7 @@
 .thumb__lead {
   max-width: 270px;
 
-  color: var(--lead-text-color);
+  color: $lead-text-color;
   font-family: "Roboto";
   font-weight: 400;
   font-size: 14px;

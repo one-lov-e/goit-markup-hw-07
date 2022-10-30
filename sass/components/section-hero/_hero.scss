@@ -31,7 +31,7 @@
   height: 120px;
   margin-bottom: 30px;
 
-  color: var(--caption-text-color);
+  color: $caption-text-color;
   font-family: "Roboto";
   font-weight: 900;
   font-size: 44px;
@@ -45,10 +45,10 @@
   width: 216px;
   height: 50px;
   cursor: pointer;
-  border: var(--logo-text-color);
+  border: $logo-text-color;
 
-  color: var(--caption-text-color);
-  background-color: var(--logo-text-color);
+  color: $caption-text-color;
+  background-color: $logo-text-color;
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
@@ -56,11 +56,11 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  transition: background-color var(--ms-transition) color var(--ms-transition);
-  transition-timing-function: var(--transition-effect);
-}
+  transition: background-color $ms-text-transition color $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
 
-.hero__bth:focus,
-.hero__bth:hover {
-  background-color: #188ce8;
+  &:focus,
+  &:hover {
+    background-color: #188ce8;
+  }
 }

@@ -2,7 +2,7 @@
   width: 145px;
   margin-right: 93px;
 
-  color: var(--logo-text-color);
+  color: $logo-text-color;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -13,5 +13,5 @@
 }
 
 .logo__header {
-  color: var(--link-tex-color);
+  color: $link-tex-color;
 }

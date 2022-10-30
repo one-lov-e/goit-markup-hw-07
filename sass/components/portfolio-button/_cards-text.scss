@@ -25,7 +25,7 @@
 }
 
 .cards__text .butons {
-  color: var(--link-tex-color);
+  color: $link-tex-color;
 
   font-family: "Roboto";
   font-style: normal;
@@ -35,9 +35,21 @@
   text-align: center;
   letter-spacing: 0.03em;
   border-radius: 4px;
-  transition: color var(--ms-transition), background-color var(--ms-transition),
-    box-shadow var(--ms-transition);
-  transition-timing-function: var(--transition-effect);
+  transition: color $ms-text-transition, background-color $ms-text-transition,
+    box-shadow $ms-text-transition;
+  transition-timing-function: $transition-text-effect;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $logo-text-color;
+    color: $caption-text-color;
+  }
 }
 
 .cards__butons {
@@ -45,7 +57,7 @@
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: inherit;
-  background-color: var(--ordinary-color);
+  background-color: $ordinary-text-color;
   filter: none;
   padding: 6px 22px;
 }
@@ -55,16 +67,4 @@
   border: none;
   cursor: pointer;
   font-size: 16px;
-}
-
-.cards__text .butons:hover,
-.cards__text .butons:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.cards__text .butons:hover,
-.cards__text .butons:focus {
-  background-color: #2196f3;
-  color: var(--caption-text-color);
 }

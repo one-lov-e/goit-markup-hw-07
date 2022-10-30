@@ -8,11 +8,17 @@
 .pic__item {
   width: 370px;
   height: 404px;
-  background: #ffffff;
+  background: $caption-text-color;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .pic__list .list {
-  color: var(--lead-text-color);
+  color: $lead-text-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -33,12 +39,12 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  color: var(--caption-text-color);
-  background-color: var(--logo-text-color);
+  color: $caption-text-color;
+  background-color: $logo-text-color;
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
-  transition: transform var(--ms-transition);
+  transition: transform $ms-text-transition;
 }
 
 .pic__description {
@@ -47,7 +53,7 @@
 }
 
 .pic__name {
-  color: var(--link-tex-color);
+  color: $link-tex-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -57,7 +63,7 @@
 }
 
 .cards-list .title {
-  color: var(--link-tex-color);
+  color: $link-tex-color;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -68,12 +74,6 @@
 
 .pic__item:hover .pic__text {
   transform: translateY(0);
-}
-
-.pic__item:hover,
-.pic__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .pic__link {
