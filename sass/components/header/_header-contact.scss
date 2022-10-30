@@ -34,9 +34,9 @@
   color: var(--auth-nav-text-color);
   text-decoration: none;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header__mail:hover,
-.header__mail:focus {
-  color: var(--logo-text-color);
+  
+  &:hover,
+  &:focus {
+  color: $logo-text-color;
+  }
 }
