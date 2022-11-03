@@ -40,13 +40,13 @@
   &:focus {
     border-color: $logo-text-color;
   }
+
+  &:hover .customers__icon,
+  &:focus .customers__icon {
+    fill: $logo-text-color;
+  }
 }
 
 .customers__icon {
   fill: #afb1b8;
-}
-
-.customers__logo:hover .customers__icon,
-.customers__logo:focus .customers__icon {
-  fill: $logo-text-color;
 }

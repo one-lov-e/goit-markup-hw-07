@@ -22,6 +22,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &-modal-close:hover,
+  &-modal-close:focus {
+    border-color: #000000;
+  }
+
+  &-modal-close:hover .icon-close,
+  &-modal-close:focus .icon-close {
+    fill: $logo-text-color;
+  }
 }
 
 .data-modal-close {
@@ -93,6 +103,15 @@
   padding-left: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
+
+  &:focus + .modal__icon {
+    fill: $logo-text-color;
+  }
+
+  &:focus,
+  &:focus {
+    outline: $logo-text-color solid 1px;
+  }
 }
 
 .modal__icon {
@@ -131,10 +150,20 @@
   gap: 8px;
   margin-bottom: 30px;
   justify-content: center;
+
+  & a {
+    color: $logo-text-color;
+  }
 }
 
-.check__icon {
-  fill: transparent;
+.input-check:checked + .modal__name span {
+  background-color: $logo-text-color;
+  border-radius: 2px;
+}
+
+.input-check:checked + .modal__name .check__icon {
+  fill: $caption-text-color;
+  border: none;
 }
 
 .check__icon {
@@ -146,6 +175,10 @@
   align-items: center;
   justify-content: center;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  & {
+    fill: transparent;
+  }
 }
 
 .modal__gabarit {
@@ -168,10 +201,11 @@
 
   color: rgba(117, 117, 117, 0.5);
   margin-bottom: 20px;
-}
 
-.modal__name a {
-  color: $logo-text-color;
+  &:focus,
+  &:focus {
+    outline: $logo-text-color solid 1px;
+  }
 }
 
 .modal__icon {
@@ -182,15 +216,6 @@
   transform: translateY(-50%);
 }
 
-.input-check:checked + .modal__name span {
-  background-color: $logo-text-color;
-  border-radius: 2px;
-}
-
-.input-check:checked + .modal__name .check__icon {
-  fill: $caption-text-color;
-  border: none;
-}
 /*-----------------MODAL-CHECKBOX  AND-------------------*/
 
 /*-----------------MONDAL-BUTOON-----------------------*/
@@ -249,37 +274,10 @@
   padding-right: 40px;
 }
 
-.data-modal-close:hover,
-.data-modal-close:focus {
-  border-color: #000000;
-}
-
-.data-modal-close:hover .icon-close,
-.data-modal-close:focus .icon-close {
-  fill: $logo-text-color;
-}
-
 .no-scroll {
   overflow: hidden;
 }
 
-.modal-modal:focus {
-  border-color: $logo-text-color;
-}
-
-.modal__input:focus + .modal__icon {
-  fill: $logo-text-color;
-}
-
-.modal__input:focus,
-.modal__input:focus {
-  outline: $logo-text-color solid 1px;
-}
-
-.modal__gabarit:focus,
-.modal__gabarit:focus {
-  outline: $logo-text-color solid 1px;
-}
 /*-----------------MONDAL-CLOSE AND---------------------------*/
 
 .backdrop {

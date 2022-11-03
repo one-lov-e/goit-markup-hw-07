@@ -88,13 +88,13 @@
   &:focus {
     background-color: $logo-text-color;
   }
+
+  &:hover .work__icon,
+  &:focus .work__icon {
+    fill: $caption-text-color;
+  }
 }
 
 .work__icon {
   fill: #afb1b8;
-}
-
-.work__link:hover .work__icon,
-.work__link:focus .work__icon {
-  fill: $caption-text-color;
 }
