@@ -1,18 +1,44 @@
 .thumb {
-  padding-top: 94px;
-  padding-bottom: 118px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .thumb__list {
   display: flex;
-  width: 1170px;
-  height: 98px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .thumb__item {
-  margin-right: 30px;
-  width: 270px;
+  margin-bottom: 136px;
+  width: 100%;
   height: 98px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .thumb__about {
