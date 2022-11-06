@@ -14,7 +14,7 @@
 
 <body>
     <!--Верхня лінія-->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header__nav">
                 <nav class="header__nav">
@@ -41,17 +41,65 @@
                         </svg>
                         +38 096 111 11 11
                     </a>
-
                 </div>
             </div>
         </div>
-    </header>-->
+        </div>
+        </div>
+        <div class="mob-menu" data-menu>
+            <button class="menu-close-bth" type="button" data-menu-close>X</button>
+            <div class="container">
+                <div class>
+                    <nav class="mob-menu__nav">
+                        <ul class="mob-menu__list list">
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="./index.html">Студія</a>
+                            </li>
+
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+                            </li>
+
+                            <li class="mob-menu__item">
+                                <a class="mob-menu__link" href="#">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mob-menu-bottom">
+                    <div class="mob-connect">
+                        <a class="mob-connect__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+
+                        <a class="mob-connect__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <ul class="mob__soc-list">
+                        <li class="mob__soc-item">
+                            <a class="mob__soc-link" href="https://www.instagram.com">Instagram</a>
+                        </li>
+
+
+                        <li class="mob__soc-item">
+                            <a class="mob__soc-link" href="https://twitter.com">Twitter</a>
+                        </li>
+
+                        <li class="mob__soc-item">
+                            <a class="mob__soc-link" href="https://www.facebook.com">Facebook</a>
+                        </li>
+
+                        <li class="mob__soc-item">
+                            <a class="mob__soc-link" href="https://www.linkedin.com">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
 
 
     <main>
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
 
                 <div class="hero__content">
@@ -60,7 +108,7 @@
                 </div>
 
             </div>
-        </section>-->
+        </section>
 
 
 
@@ -150,7 +198,19 @@
 
                 <ul class="work__list">
                     <li class="work__item">
-                        <img src="./images/team-1.jpg" alt="наша команда" width="270" />
+                        <picture>
+                            <source srcset="./images/team-1.jpg 1x , ./images/team-1-2x.jpg 2x"
+                                media="(min-width : 1200px)">
+
+                            <source srcset="./images/team-1-tab.jpg 1x , ./images/team-1-tab-2x.jpg 2x"
+                                media="(min-width : 768px)">
+
+                            <source srcset="./images/team-1-mob.jpg 1x , ./images/team-1-mob-2x.jpg 2x"
+                                media="(min-width : 480px)">
+
+                        </picture>
+                        <img srcset="./images/team-1.jpg 1x , ./images/team-1-2x.jpg 2x" src="./images/team-1.jpg"
+                            alt="наша команда" width="450" />
                         <div class="work__description">
                             <h3 class="work__list">Ігор Дем'яненко</h3>
                             <p class="work__lead">Product Designer</p>
@@ -192,7 +252,8 @@
                     </li>
 
                     <li class="work__item">
-                        <img src="./images/team-2.jpg" alt="наша команда" width="270" />
+                        <img srcset="./images/team-2.jpg 1x , ./images/team-2-2x.jpg 2x " src="./images/team-2.jpg"
+                            alt="наша команда" width="450" />
                         <div class="work__description">
                             <h3 class="work__list">Ольга Рєпіна</h3>
                             <p class="work__lead">Frontend Developer</p>
@@ -233,7 +294,8 @@
                     </li>
 
                     <li class="work__item">
-                        <img src="./images/team-3.jpg" alt="наша команда" width="270" />
+                        <img srcset="./images/team-3.jpg 1x , ./images/team-3-2x.jpg 2x" src="./images/team-3.jpg"
+                            alt="наша команда" width="450" />
                         <div class="work__description">
                             <h3 class="work__list">Микола Тарасов</h3>
                             <p class="work__lead">Marketing</p>
@@ -274,7 +336,8 @@
                     </li>
 
                     <li class="work__item">
-                        <img src="./images/team-4.jpg" alt="наша команда" width="270" />
+                        <img srcset="./images/team-4.jpg 1x , ./images/team-4-2x.jpg 2x" src="./images/team-4.jpg"
+                            alt="наша команда" width="450" />
                         <div class="work__description">
                             <h3 class="work__list">Михайло Єрмаков</h3>
                             <p class="work__lead">UI Designer</p>
@@ -318,7 +381,7 @@
         </section>
 
 
-        <!-- <section class="customers">
+        <section class="customers">
             <div class="container">
                 <p class="customers__title">Постійні клієнти</p>
                 <ul class="customers__list">
@@ -371,11 +434,11 @@
                     </li>
                 </ul>
             </div>
-        </section>-->
+        </section>
 
 
     </main>
-    <!-- <footer class="foot">
+    <footer class="foot">
 
         <div class="container">
             <div class="foot__container ">
@@ -454,7 +517,7 @@
 
 
 
-    </footer>-->
+    </footer>
 
 
     <div class="backdrop is-hidden" data-modal>

@@ -1,6 +1,6 @@
 .logo {
-  width: 145px;
-  margin-right: 93px;
+  //width: 145px;
+  //margin-right: 93px;
 
   color: $logo-text-color;
   font-family: "Raleway";
@@ -10,6 +10,9 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  @media screen and (min-width: 480px) {
+  }
 }
 
 .logo__header {

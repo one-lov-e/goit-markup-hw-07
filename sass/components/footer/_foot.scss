@@ -3,25 +3,58 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
+
   background-color: $subject-text-color;
 }
 
 .foot__container {
   display: flex;
-  align-items: baseline;
-  gap: 70px;
+
+  gap: 60px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
 }
 
 .foot__basement {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
 .foot__list {
   display: flex;
   flex-direction: column;
   gap: 9px;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+
+.adress__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .foot__page {
@@ -115,6 +148,15 @@
 }
 
 /*----------------------------------FOOTER FORM---------------------------------------*/
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+  }
+}
+
 .footer__list {
   font-family: "Roboto";
   font-style: normal;
@@ -128,10 +170,8 @@
 }
 
 .footer__email {
-  width: 358px;
+  width: 100%;
   height: 50px;
-  left: 815px;
-  top: 2784px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -147,11 +187,24 @@
   &:focus {
     outline: #2196f3 solid 1px;
   }
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .footer__submit {
   display: flex;
   gap: 12px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
 }
 
 .footer__bth {
@@ -182,6 +235,9 @@
   &:hover {
     background-color: #188ce8;
   }
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__icon {

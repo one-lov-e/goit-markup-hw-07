@@ -1,8 +1,6 @@
 .thumb {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     padding-top: 60px;
@@ -22,9 +20,9 @@
 }
 
 .thumb__item {
-  margin-bottom: 136px;
+  // margin-bottom: 136px;
   width: 100%;
-  height: 98px;
+  // height: 98px;
 
   @media screen and (min-width: 768px) {
     max-width: 480px;
@@ -42,6 +40,7 @@
 }
 
 .thumb__about {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +51,9 @@
 }
 
 .thumb__text {
-  max-width: 270px;
-  height: 16px;
   margin-bottom: 10px;
 
+  text-align: center;
   color: $link-tex-color;
   font-family: "Roboto";
   font-weight: 700;
@@ -66,7 +64,7 @@
 }
 
 .thumb__lead {
-  max-width: 270px;
+  // max-width: 270px;
 
   color: $lead-text-color;
   font-family: "Roboto";
