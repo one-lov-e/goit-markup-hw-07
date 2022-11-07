@@ -77,10 +77,14 @@ img {
 }
 
 .header {
-  width: 100%;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    width: 100%;
+  }
 }
 
 .header__nav {
@@ -417,7 +421,16 @@ img {
 
 .header__menu {
   display: none;
-  gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    max-width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    margin-left: 90px;
+  }
 }
 
 .header__menu .link {
@@ -474,11 +487,25 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-close-bth {
   margin-left: auto;
   display: block;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  cursor: pointer;
+}
+
+.menu-hover {
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-close-bth:hover .menu-hover,
+.menu-close-bth:focus .menu-hover {
+  fill: #2196f3;
 }
 
 .mob-menu__list {
@@ -502,6 +529,11 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   text-decoration: none;
+}
+
+.mob-menu__link:hover,
+.mob-menu__link:focus {
+  color: #2196f3;
 }
 
 .mob-connect__tel {
@@ -549,6 +581,31 @@ img {
   text-decoration: none;
 }
 
+.social-header__line {
+  position: relative;
+  margin-left: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 22px;
+  height: 0;
+}
+
+.menu-open-bth {
+  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .menu-open-bth {
+    max-width: 768px;
+    display: none;
+  }
+}
+
+.menu-open-bth {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .header__icon {
   margin-right: 10px;
   fill: currentColor;
@@ -556,11 +613,40 @@ img {
 
 .header__contact {
   display: none;
-  margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+  .header__contact {
+    max-width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .header__mail {
-  margin-right: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -788,44 +874,42 @@ img {
   padding-bottom: 94px;
 }
 
-.features__text {
-  margin-bottom: 50px;
-  color: #212121;
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+@media screen and (min-width: 1200px) {
+  .features__text {
+    margin-bottom: 50px;
+    color: #212121;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .features__item {
+    position: relative;
+  }
+  .features__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    width: 100%;
+  }
 }
-
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.features__item {
-  position: relative;
-}
-
-.features__title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px;
-  width: 100%;
-}
-
 .work {
   padding-top: 60px;
   padding-bottom: 60px;
